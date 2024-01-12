@@ -1,12 +1,14 @@
 import React from "react";
 
 const VideoCard = ({ info }) => {
-  // const { title, tumbnails } = snippet;
-  console.log(info.snippet.thumbnails.medium.url);
+  // console.log("called");
   return (
-    <div>
+    <div className="card">
       <img src={info.snippet.thumbnails.medium.url} alt="tumbnail" />
-      check{" "}
+      <h1 className="truncate">{info.snippet.localized.title}</h1>
+      <h3>
+        {info.statistics.likeCount} | {info.statistics.commentCount}
+      </h3>
     </div>
   );
 };

@@ -18,13 +18,13 @@ const Logo = () => {
         src="https://www.citypng.com/public/uploads/preview/hd-black-menu-burger-icon-transparent-background-31634946207uno2yrzogi.png?v=2023072222"
         alt="youtube icon"
       />
-      {/* <Link to="/"> */}
-      <img
-        className="h-[24px]"
-        src="https://t3.ftcdn.net/jpg/05/07/46/84/360_F_507468479_HfrpT7CIoYTBZSGRQi7RcWgo98wo3vb7.jpg"
-        alt="youtube icon"
-      />
-      {/* </Link> */}
+      <Link to="/">
+        <img
+          className="h-[24px]"
+          src="https://t3.ftcdn.net/jpg/05/07/46/84/360_F_507468479_HfrpT7CIoYTBZSGRQi7RcWgo98wo3vb7.jpg"
+          alt="youtube icon"
+        />
+      </Link>
     </div>
   );
 };
